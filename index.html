@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="swiper/swiper.min.css">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<!-- 顶部导航 -->
+		<div class="wrapper top">
+			<div class="container">
+				<ul class="top_left">
+					<li><a href="">武汉市</a></li>
+					<li><a href="">客服电话</a>&nbsp;<a class="phone" href="">400-000-8590</a></li>
+				</ul>
+				<ul class="top_right">
+					<li><a href="#">用户登录</a></li>
+					<li><a href="#">免费注册</a></li>
+					<li><a href="#">在线客服</a></li>
+					<li><a href="#">账号管理</a></li>
+					<li><a href="#"><i></i>关注公众号</a></li>
+					<li><a href="#"><i></i>APP</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 中间区域模块 -->
+		<div class="wrapper">
+			<div class="container main">
+				<div class="logo">
+					<img src="images/logo.jpg">
+				</div>
+				<div class="search_wrapper">
+					<div class="search clearfloat">
+						<img src="images/combined%20shape.png" alt="">
+						<input type="text" placeholder="请搜索">
+						<span>办公</span>
+						<a href="">搜索</a>
+					</div>
+				</div>
+				<div class="mychart">
+					<p><img src="images/cart.png" alt="">我的购物车<i>0</i></p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 导航栏模块 -->
+		<div class="wrapper">
+			<div class="container main">
+				<ul class="top_nav">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">秒杀专区</a></li>
+					<li><a href="#">积分通</a></li>
+					<li><a href="#">合约通</a></li>
+					<li><a href="#">福利通</a></li>
+					<li><a href="#">领消费券</a></li>
+					<li><a href="#">供应商入驻</a></li>
+				</ul>
+				<p class="news"><img src="images/news.png" alt=""><span>企事通智选平台试运行</span></p>
+			</div>
+		</div>
+		<!-- banner广告模块 -->
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="images/banner01.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="images/banner02.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="images/banner03.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="images/banner04.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="images/banner05.jpg" alt=""></div>
+			</div>
+			<div class="swiper-btn-right ">
+				<div class="swiper-button-next swiper-button-white"></div>
+			</div>
+			 <div class="swiper-btn-left">
+				 <div class="swiper-button-prev swiper-button-white"></div>
+			 </div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+		
+		<div class="wrapper">
+			<div class="container seckill_box">
+				<div class="seckill_left">
+					<img src="images/seckill_box.jpg" alt="">
+				</div>
+				<div id= "parent">
+					<div id="uls">
+						<!-- 图片列表 -->
+						<ul id="img_ul">
+							<li><img src="images/banner01.jpg"/></li>
+							<li><img src="images/banner02.jpg"/></li>
+						</ul>
+						<!-- 小圆点列表 -->
+						<ul id='litCir_ul'></ul>
+					</div>
+					<div id="buttons">
+						<span id="left">&lt;</span>
+						<span id="right">&gt;</span>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!-- 底部导航 -->
+		<div>
+			
+		</div>
+		<script src="swiper/swiper.min.js"></script>
+		<script src="js/index.js"></script>
+		  <!-- Initialize Swiper -->
+		  <script>
+			var swiper = new Swiper('.swiper-container', {
+				   
+					slidesPerView: 1,
+					spaceBetween: 30,
+					loop: true,
+					pagination: {
+					  el: '.swiper-pagination',
+					  clickable: true,
+					 
+					},
+					navigation: {
+					  nextEl: '.swiper-button-next',
+					  prevEl: '.swiper-button-prev',
+					  
+					},
+					
+			    });
+				
+		  </script>
+	</body>
+</html>

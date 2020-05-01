@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>轮播图实现</title>
+		<link rel="stylesheet" href="banner.css">
+		
+	</head>
+	<body>
+		<!-- 三个div，最外层id为parent的大div内包含了uls和buttons两个div，
+			uls中包含了两个列表img_ul（图片列表）, litCir_ul（小圆点列表），
+			buttons里则包含了“左”， “右”两个按钮。 -->
+		<div id= "parent">
+			<div id="uls">
+				<!-- 图片列表 -->
+				<ul id="img_ul">
+					<li><img src="imgs/banner01.jpg"/></li>
+					<li><img src="imgs/banner02.jpg"/></li>
+					<li><img src="imgs/banner03.jpg"/></li>
+					<li><img src="imgs/banner04.jpg"/></li>
+				</ul>
+				<!-- 小圆点列表 -->
+				<ul id='litCir_ul'></ul>
+			</div>
+			<div id="buttons">
+				<span id="left">&lt;</span>
+				<span id="right">&gt;</span>
+			</div>
+		</div>
+		<script type="text/javascript" src="banner.js"></script>
+	</body>
+</html>
